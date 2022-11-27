@@ -23,12 +23,10 @@ class TabBarDemo extends StatelessWidget {
         navPop:false,
         fontSize:28.0,
         scaffoldPadding: 16.0,
-        appBarElevation:1.0,
+        appBarElevation:0.4,
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: [
-           
-          
             SettingsTab(
                 onpress: () {},
                 iconColor: textColor,

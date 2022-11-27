@@ -1,6 +1,8 @@
+import 'package:e_library/feature/e-book/screens/filter_page.dart';
 import 'package:e_library/helpers/colors.dart';
 import 'package:e_library/helpers/components/app_icon.dart';
 import 'package:e_library/helpers/components/button.dart';
+import 'package:e_library/helpers/navigators.dart';
 import 'package:e_library/helpers/page_layout/page_layout.dart';
 import 'package:e_library/helpers/page_layout/text_formating.dart';
 import 'package:flutter/material.dart';
@@ -55,6 +57,7 @@ class Home extends StatelessWidget {
               ),
               const SizedBox(height:100.0,),
               AppButton(
+                onPress:()=>nextPage(context,(context)=>FilterScreen()),
                 title:"Advance",
               ),
             ],

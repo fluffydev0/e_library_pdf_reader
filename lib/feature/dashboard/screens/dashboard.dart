@@ -1,10 +1,9 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:e_library/feature/blog/screens/blog.dart';
+import 'package:e_library/feature/e-book/screens/e-books.dart';
 import 'package:e_library/feature/catch-up/screens/catch_up.dart';
 import 'package:e_library/feature/dashboard/screens/home.dart';
-import 'package:e_library/feature/reels/screens/reels.dart';
 import 'package:e_library/feature/settings/screens/settings.dart';
 import 'package:e_library/helpers/colors.dart';
 import 'package:e_library/helpers/page_layout/text_formating.dart';
