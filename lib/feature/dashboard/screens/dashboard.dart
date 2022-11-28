@@ -2,7 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:e_library/feature/e-book/screens/e-books.dart';
-import 'package:e_library/feature/catch-up/screens/catch_up.dart';
+import 'package:e_library/feature/courses/screens/course.dart';
 import 'package:e_library/feature/dashboard/screens/home.dart';
 import 'package:e_library/feature/settings/screens/settings.dart';
 import 'package:e_library/helpers/colors.dart';

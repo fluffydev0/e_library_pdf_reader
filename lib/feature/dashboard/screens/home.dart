@@ -14,7 +14,7 @@ class Home extends StatelessWidget {
       title:"Welcome",
       fontSize:28.0,
       navPop:false,
-      appBarColor:secondaryColor,
+      appBarColor:primaryColor,
       titleTextColor:Colors.white,
       appBarElevation:1.0,
       child:SingleChildScrollView(

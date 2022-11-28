@@ -1,30 +1,29 @@
 import 'package:e_library/helpers/colors.dart';
+import 'package:flutter/cupertino.dart';
 import 'package:e_library/helpers/page_layout/page_layout.dart';
-import 'package:e_library/helpers/snakbars.dart';
 import 'package:flutter/material.dart';
-import 'package:url_launcher/url_launcher.dart';
-// import 'package:url_launcher/url_launcher.dart';
 
-
-class ListEbooks extends StatefulWidget {
-
+class CatchUp extends StatefulWidget {
   @override
-  State<ListEbooks> createState() => _ListEbooksState();
+  State<CatchUp> createState() => _CatchUpState();
 }
 
-class _ListEbooksState extends State<ListEbooks> {
+class _CatchUpState extends State<CatchUp> {
   @override
   Widget build(BuildContext context) {
     return PageLayout(
-      title:"Books",
+      title: 'Department',
+      navPop:false,
+      scaffoldPadding: 16.0,
       appBarElevation:0.3,
-      child:Booklist()
+      child:Courselist()
     );
   }
 }
 
 
-class Booklist extends StatelessWidget {
+
+class Courselist extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
@@ -45,15 +44,11 @@ class Booklist extends StatelessWidget {
           ),
           child:  ListTile(
             onTap:() async{
-              final url = "https://res.cloudinary.com/acekn/image/upload/v1669625357/asnl/Toyib_ES_practical_assignment_l9qs41.pdf";
-              await canLaunch(url)
-              ? await launch(url)
-              : throw pageToast('Could not launch $url', dangerColor);
             },
             contentPadding:EdgeInsets.all(0),
-            title:Text("Com 101"),
-            subtitle:Text("computer security"),
-            leading:Icon(Icons.book,color:primaryColor,),
+            title:Text("Computer science"),
+            subtitle:Text("School of technology"),
+            leading:Icon(Icons.import_contacts,color:primaryColor,),
             trailing:Icon(Icons.chevron_right),
           ),
         )

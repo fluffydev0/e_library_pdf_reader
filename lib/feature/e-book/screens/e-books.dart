@@ -1,8 +1,10 @@
+import 'package:e_library/feature/e-book/screens/list_books.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:e_library/helpers/colors.dart';
 import 'package:e_library/helpers/components/flexible_text.dart';
 import 'package:e_library/helpers/page_layout/page_layout.dart';
 import 'package:e_library/helpers/page_layout/text_formating.dart';
+import 'package:flutter/material.dart';
 
 class Blog extends StatefulWidget {
   @override
@@ -16,7 +18,6 @@ class _BlogState extends State<Blog> {
       // title:'Blog',
       noAppBar: true,
       scaffoldPadding: 16.0,
-      child: SingleChildScrollView(
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: [
@@ -50,9 +51,12 @@ class _BlogState extends State<Blog> {
                 )
               ],
             ),
+            Divider(),
+            Expanded(
+              child:Booklist()
+            )
           ],
         ),
-      ),
     );
   }
 }
